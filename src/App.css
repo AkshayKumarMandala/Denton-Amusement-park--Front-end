@@ -1,13 +1,16 @@
 /* Global Styles */
-body, html {
+body,
+html {
   margin: 0;
   padding: 0;
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
   background-color: #f4f4f4;
   color: #333;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   color: #007bff;
 }
 
@@ -202,21 +205,77 @@ a:hover {
   transform: translateY(-5px);
 }
 
+.service-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.add-service {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 50px 0;
+}
+
+.add-service form div {
+  margin: 20px 0;
+}
+
+.add-service button {
+  background-color: #007bff;
+  border: 0;
+  color: white;
+  border-radius: 16px;
+  padding: 12px 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* Contact Page Styles */
+.contact {
+  width: 100vw;
+}
+
 .contact-header {
   text-align: center;
-  padding: 40px;
   background-color: #007bff;
+  color: white;
+  padding: 20px;
+}
+
+.contact-header h1 {
+  margin: 0;
   color: white;
 }
 
 .contact-form {
   max-width: 600px;
-  margin: 0 auto;
-  padding: 20px;
+  margin: 20px auto;
+  padding: 50px 20px;
   background-color: white;
   border: 1px solid #ddd;
   border-radius: 8px;
+}
+
+.contact-div {
+  width: 100vw;
+  display: flex;
+  justify-content: around;
+  align-items: center;
+}
+
+.view-feedbacks,
+.add-feedback {
+  width: 50%;
+  padding: 100px;
+}
+
+.add-feedback {
+  padding: 50px;
+  background-color: white;
+  border-radius: 8px;
+  margin: 10px 50px;
 }
 
 .form-group {
@@ -250,7 +309,7 @@ a:hover {
 .map {
   width: 600px;
   height: 400px;
-  background-image: url('../assets/map.jpg'); /* Replace with actual map image */
+  background-image: url("../assets/map.jpg"); /* Replace with actual map image */
   background-size: cover;
   margin: 0 auto;
   border: 2px solid #333;

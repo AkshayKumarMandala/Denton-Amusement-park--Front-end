@@ -62,7 +62,7 @@
 .map {
   width: 600px;
   height: 400px;
-  background-image: url('../assets/map.jpg'); /* Replace with your map image */
+  background-image: url("../assets/map.jpg"); /* Replace with your map image */
   background-size: cover;
   position: relative;
   margin: 0 auto;

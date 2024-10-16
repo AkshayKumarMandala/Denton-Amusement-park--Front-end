@@ -1,9 +1,17 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './App.css';
-import './index.css';
 
-const Home: React.FC = () => {
+interface Service {
+  id: string; // Assuming the ID is a string (Firebase generated)
+  name: string;
+  description: string;
+}
+
+interface HomeProps {
+  services: Service[]; // Define the services prop
+}
+
+const Home: React.FC<HomeProps> = ({ services }) => {
   return (
     <div className="home">
       <header className="home-header">
@@ -13,23 +21,21 @@ const Home: React.FC = () => {
           Explore accessible rides, sensory-friendly zones, and family-friendly entertainment.
         </p>
         <Link to="/services" className="btn-primary">Explore Services</Link>
-      </header>
+      </header> 
 
       <section className="features">
-        <h2>Our Highlights</h2>
+        <h2 style={{ marginLeft: "150px" }}>Our Highlights</h2>
         <div className="features-grid">
-          <div className="feature-item">
-            <h3>Wheelchair-Friendly Pathways</h3>
-            <p>Seamless and accessible paths throughout the park.</p>
-          </div>
-          <div className="feature-item">
-            <h3>Sensory-Friendly Zones</h3>
-            <p>Quiet areas for those with sensory sensitivities.</p>
-          </div>
-          <div className="feature-item">
-            <h3>Inclusive Rides</h3>
-            <p>Fun for all with inclusive rides designed for accessibility.</p>
-          </div>
+          {services.length > 0 ? (
+            services.map(service => (
+              <div key={service.id} className="feature-item"> {/* Provide a unique key for each service */}
+                <h3>{service.name}</h3>
+                <p>{service.description}</p>
+              </div>
+            ))
+          ) : (
+            <p>No services available at the moment.</p> // Handle the case when there are no services
+          )}
         </div>
       </section>
     </div>

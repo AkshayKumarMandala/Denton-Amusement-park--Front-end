@@ -1,0 +1,273 @@
+/* Global Styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+h1, h2, h3 {
+  color: #007bff;
+}
+
+p {
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* App Component Styles */
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar a {
+  color: white;
+  margin-left: 1rem;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  color: #ddd;
+}
+
+/* Footer Styles */
+.footer {
+  background-color: #222;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+.footer p {
+  margin: 0;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+.footer-links li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.footer-links li a {
+  color: white;
+}
+
+.footer-links li a:hover {
+  color: #ddd;
+}
+
+/* Home Page Styles */
+.home-header {
+  text-align: center;
+  background-color: #007bff;
+  color: white;
+  padding: 50px;
+}
+
+.home-header h1 {
+  margin: 0;
+  font-size: 3rem;
+}
+
+.home-header p {
+  margin: 20px 0;
+  font-size: 1.2rem;
+}
+
+.btn-primary {
+  background-color: #ff5722;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.btn-primary:hover {
+  background-color: #e64a19;
+}
+
+/* Features Section */
+.features {
+  padding: 40px 20px;
+  background-color: #fff;
+}
+
+.features-grid {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.feature-item {
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 8px;
+  width: 250px;
+  text-align: center;
+}
+
+.feature-item h3 {
+  margin-bottom: 10px;
+}
+
+/* Services Page Styles */
+.services-header {
+  text-align: center;
+  padding: 40px;
+  background-color: #007bff;
+  color: white;
+}
+
+.services-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+.service-item {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 10px;
+  width: 300px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.service-item:hover {
+  transform: translateY(-5px);
+}
+
+/* Contact Page Styles */
+.contact-header {
+  text-align: center;
+  padding: 40px;
+  background-color: #007bff;
+  color: white;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-group textarea {
+  resize: vertical;
+  height: 150px;
+}
+
+/* Map Page Styles */
+.map-container {
+  padding: 20px;
+  text-align: center;
+}
+
+.map {
+  width: 600px;
+  height: 400px;
+  background-image: url('../assets/map.jpg'); /* Replace with actual map image */
+  background-size: cover;
+  margin: 0 auto;
+  border: 2px solid #333;
+  position: relative;
+}
+
+.map-marker {
+  position: absolute;
+  background-color: red;
+  color: white;
+  padding: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 12px;
+  transform: translate(-50%, -50%);
+}
+
+.map-marker:hover {
+  background-color: darkred;
+}

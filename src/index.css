@@ -1,0 +1,84 @@
+/* Navbar styles */
+.navbar {
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-links li a {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar-links li a:hover {
+  text-decoration: underline;
+}
+
+/* Footer styles */
+.footer {
+  background-color: #222;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.footer-links li a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-links li a:hover {
+  text-decoration: underline;
+}
+
+/* Map styles */
+.map-container {
+  padding: 20px;
+  text-align: center;
+}
+
+.map {
+  width: 600px;
+  height: 400px;
+  background-image: url('../assets/map.jpg'); /* Replace with your map image */
+  background-size: cover;
+  position: relative;
+  margin: 0 auto;
+  border: 2px solid #333;
+}
+
+.map-marker {
+  position: absolute;
+  background-color: red;
+  color: white;
+  padding: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.map-marker:hover {
+  background-color: darkred;
+}
